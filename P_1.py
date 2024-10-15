@@ -49,3 +49,5 @@ while True:
                 card_me['Здоровье'] = card_me['Здоровье'] - card_comp['Сила']
                 print(card_me)
 cards_comp = ['Добби','Человек','Воландеморт']
+
+1
