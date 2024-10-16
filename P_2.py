@@ -3,33 +3,30 @@ import time
 
 print('*' * 10, 'Игра таинственного торговца', '*' * 10)
 
-# Карточки игрока
-dragon = {'Здоровье': 2, 'Сила': 3}
-elf = {'Здоровье': 12, 'Сила': 23}
-ork = {'Здоровье': 32, 'Сила': 43}
-ork = {'Здоровье': 32, 'Сила': 43}
-ork = {'Здоровье': 32, 'Сила': 43}
-ork = {'Здоровье': 32, 'Сила': 43}
-# Игра
+rat = {'Здоровье': 2, 'Сила': 1}
+dobby = {'Здоровье': 3, 'Сила': 4}
+human = {'Здоровье': 4, 'Сила': 5}
+half_mag = {'Здоровье': 5, 'Сила': 6}
+magician = {'Здоровье': 7, 'Сила': 7}
+volandemort = {'Здоровье': 10, 'Сила': 8}
 
-cards = [dragon, elf, ork]
-cards_comp = [dragon, elf, ork]
-
+cards = [rat, human, magician]
 print('Ваши карты:')
-print('Дракон', dragon)
-print('Эльф', elf)
-print('Орк', ork)
+print('Крыса', rat)
+print('Человек', human)
+print('Маг', magician)
+
 card = input('Ваш ход, какую карту выберете?')
-card_comp = random.choice(cards_comp)
-if card == 'Дракон':
-    print('Ваша карта:', dragon)
-    card = dragon
-elif card == 'Эльф':
-    print('Ваша карта:', elf)
-    card = elf
-elif card == 'Орк':
-    print('Ваша карта:', ork)
-    card = ork
+card_comp = random.choice(cards)
+if card == 'Крыса':
+    print('Ваша карта:', rat)
+    card = rat
+elif card == 'Человек':
+    print('Ваша карта:', human)
+    card = human
+elif card == 'Маг':
+    print('Ваша карта:', magician)
+    card = magician
 time.sleep(1)
 print('Карта противника:', card_comp)
 while True:
